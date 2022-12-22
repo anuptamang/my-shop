@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
     const getProducts = async () => {
       const res = await fetch('/api/products')
-      const data = res.json().then((data) => console.log(data))
+      res.json().then((data) => console.log(data))
     }
     getProducts()
   })
